@@ -1,0 +1,11 @@
+webapps:
+  - sample:
+      url: http://localhost:8080/health
+      auth:
+        grant_type: password
+        url: http://localhost:8080/oauth/token
+        method: POST
+        headers:
+          - Content-Type: application/json
+        username: tlog
+        password: tlog
