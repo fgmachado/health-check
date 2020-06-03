@@ -6,7 +6,7 @@ from datetime import datetime
 from .webapp_service import WebappService
 
 
-class HealthCheckSevice:
+class HealthCheckService:
 
     def __init__(self):
         self.schedule()
