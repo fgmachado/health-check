@@ -1,6 +1,7 @@
 webapps:
   - sample:
       url: http://localhost:8080/health
+      verification_interval_minutes: 1
       auth:
         grant_type: password
         url: http://localhost:8080/oauth/token
