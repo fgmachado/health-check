@@ -8,5 +8,5 @@ webapps:
         method: POST
         headers:
           - Content-Type: application/json
-        username: tlog
-        password: tlog
+        username: test
+        password: test
