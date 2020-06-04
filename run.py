@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from services.health_check_service import HealthCheckService
+from src.services.health_check_service import HealthCheckService
 
 try:
-    HealthCheckService().run()
+    HealthCheckService().start()
 except KeyboardInterrupt:
     print("Application interrupted by user...")

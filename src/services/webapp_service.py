@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 
 import yaml
-from models.auth import Auth
-from models.webapp import Webapp
-from models.passowrd_auth import PasswordAuth
-from models.client_credentials_auth import ClientCredentialsAuth
+from src.models.auth import Auth
+from src.models.webapp import Webapp
+from src.models.passowrd_auth import PasswordAuth
+from src.models.client_credentials_auth import ClientCredentialsAuth
 
 
 class WebappService:
     webapps = []
 
     def load_configuration(self):
-        with open("./config/webapps.yml") as file:
+        with open("./src/config/webapps.yml") as file:
             try:
                 document = yaml.safe_load(file)
                 return self.parse_apps(document.get("webapps"))
