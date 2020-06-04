@@ -24,3 +24,4 @@ class HealthCheckService:
         if webapp.auth is not None:
             auth_service = AuthService()
             access_token = auth_service.do_auth(webapp.auth)
+            print(access_token)

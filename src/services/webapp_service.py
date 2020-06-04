@@ -46,7 +46,7 @@ class WebappService:
                             auth_config["method"],
                             auth_config["grant_type"],
                             auth_method,
-                            auth_config["headers"])
+                            auth_config.get("headers") or None)
 
             webapp = Webapp(name, config["url"], verification_interval_minutes, auth)
 
